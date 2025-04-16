@@ -1,6 +1,6 @@
 // Visit https://www.youtube.com/feed/history/comment_history and paste this into the Chrome DevTools Console
 
-let DELETION_LIMIT = 500;  // Set how many comments you want to delete here!
+let DELETION_LIMIT = 1000;  // Set how many comments you want to delete here!
 
 let LOG_INTERVAL = Math.floor(DELETION_LIMIT / 4);
 let sleep = (minTime, maxTime) =>
@@ -11,14 +11,14 @@ async function scrollToBottom() {
   await sleep(2000, 4000);
 }
 
+console.log("# GETTING READY TO BLAST YOUR COMMENTS");
 async function work(sessionDeletedCount) {
   let totalDeletedComments = parseInt(localStorage.getItem('totalDeletedComments')) || 0;
   console.log(`Total deleted comments so far (including previous runs): ${totalDeletedComments}`);
 
   let totalLoadedComments = 0;
   let totalComments = 0;
-
-  console.log("# LOADING COMMENTS");
+  
   while (totalLoadedComments < Math.min(DELETION_LIMIT - sessionDeletedCount, 500)) {
     await scrollToBottom();
 
