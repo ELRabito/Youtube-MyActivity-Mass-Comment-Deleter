@@ -23,10 +23,10 @@ async function work() {
     totalComments = buttons.length;
     totalLoadedComments = totalComments;  
 
-    if (totalComments < 1) break;  // Stop if no more comments are loaded
+    if (totalComments < 1) break;
   }
 
-  window.scrollTo(0, 0);  // Scroll back to the top
+  window.scrollTo(0, 0);
   await sleep(1000, 1500);
   let buttons = [...document.querySelectorAll("c-wiz .GqCJpe.u2cbPc.LDk2Pd .VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc")];
  
