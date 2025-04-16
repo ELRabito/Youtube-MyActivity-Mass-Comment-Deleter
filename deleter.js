@@ -51,8 +51,8 @@ async function work() {
     totalDeletedComments++;  // Increment the total deleted comments
     localStorage.setItem('totalDeletedComments', totalDeletedComments);  // Update the localStorage
 
-    // Log every 500 deletions to show progress
-    if (deletionCount % 500 === 0) {
+    // Log every 250 deletions to show progress
+    if (deletionCount % 250 === 0) {
       console.log(`Total deleted comments so far: ${totalDeletedComments}`);
     }
 
