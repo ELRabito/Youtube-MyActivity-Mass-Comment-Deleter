@@ -1,5 +1,3 @@
-// Visit https://www.youtube.com/feed/history/comment_history and paste this into the Chrome DevTools Console
-
 let DELETION_LIMIT = 1000;  // Set how many comments you want to delete here!
 
 let LOG_INTERVAL = Math.floor(DELETION_LIMIT / 4);
