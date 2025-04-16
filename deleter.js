@@ -2,7 +2,7 @@
 
 let DELETION_LIMIT = 500;  // Set how many comments you want to delete here!
 
-let LOG_INTERVAL = Math.floor(DELETION_LIMIT / 4);  // Log progress every 25%
+let LOG_INTERVAL = Math.floor(DELETION_LIMIT / 4);
 let sleep = (minTime, maxTime) =>
   new Promise(res => setTimeout(res, Math.random() * (maxTime - minTime) + minTime));
 
@@ -33,7 +33,6 @@ async function work(sessionDeletedCount) {
   window.scrollTo(0, 0);
   await sleep(1000, 1500);
 
-  // Only query buttons ONCE for deletion
   let buttons = [
     ...document.querySelectorAll(
       "c-wiz .GqCJpe.u2cbPc.LDk2Pd .VfPpkd-Bz112c-LgbsSe.yHy1rc.eT1oJ.mN1ivc"
