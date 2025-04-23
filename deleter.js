@@ -1,6 +1,5 @@
 let DELETION_LIMIT = 1000;  // Set how many comments you want to delete here!
 
-let DELETION_LIMIT = 1000;
 let LOG_INTERVAL = Math.floor(DELETION_LIMIT / 4);
 let sleep = (minTime, maxTime) =>
   new Promise(res => setTimeout(res, Math.random() * (maxTime - minTime) + minTime));
