@@ -1,3 +1,5 @@
+# Youtube-MyActivity-Mass-Comment-Deleter
+Lets you mass delete your own Youtube comments.
 
 # How to use
 * Visit https://www.youtube.com/feed/history/comment_history 
